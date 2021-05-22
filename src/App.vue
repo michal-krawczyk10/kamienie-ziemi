@@ -1,30 +1,57 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Header />
+  <router-view />
 </template>
 
+<script>
+import Header from "./components/Header.vue";
+
+
+export default {
+  name: "App",
+  components: {
+    Header,
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Paprika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+$paprika: "Paprika", cursive;
+$os: "Open Sans", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+//colors
+:root {
+  --paprika: "Paprika", cursive;
+  --montserrat: "Montserrat", sans-serif;
+  --main: #440d3d;
+  --lt-main: #e63462;
+  --op-main: #fbfbfb;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: var(--main);
+  -webkit-tap-highlight-color: transparent;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body {
+  box-sizing: border-box;
+  font-family: $montserrat;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  background: var(--op-main);
+  overflow-x: hidden;
 }
 </style>
