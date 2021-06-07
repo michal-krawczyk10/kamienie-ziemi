@@ -1,17 +1,17 @@
 <template>
   <div>
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <Main />
+    <Hero />
+    This is Home Page
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Main from "@/components/Main.vue";
+import Hero from "@/components/Hero.vue";
 
 export default {
   components: {
-    Main,
+    Hero,
   },
 };
 </script>

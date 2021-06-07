@@ -54,4 +54,12 @@ body {
   background: var(--op-main);
   overflow-x: hidden;
 }
+button {
+  background: none;
+  border: none;
+  font-family: $montserrat;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 16px;
+}
 </style>
