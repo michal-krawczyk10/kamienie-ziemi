@@ -1,5 +1,5 @@
 <template>
-  <section></section>
+  <section class='hero'></section>
 </template>
 
 <script>
@@ -10,5 +10,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+ .hero {
+  border: 1px solid red;
+  height: 300px;
+}
 </style>

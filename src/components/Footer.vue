@@ -1,0 +1,10 @@
+<template>
+  <section class="footer">Footer</section>  
+</template>
+<style lang="scss" scoped>
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid pink;
+}
+</style>

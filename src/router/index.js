@@ -28,6 +28,13 @@ const routes = [
 		component: () =>
 			import(/* webpackChunkName: "map" */ "../views/PageTwo.vue"),
 	},
+	{
+		path: "/:pathMatch(.*)*",
+		name: "Page Not Found",
+		component: () =>
+			import(/* webpackChunkName:
+			"map" */ "../views/PageNotFound.vue"),
+	},
 ];
 
 const router = createRouter({
